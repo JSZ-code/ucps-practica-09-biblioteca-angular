@@ -1,0 +1,12 @@
+<section class="detail-container">
+  <a class="back-link" routerLink="/">← Volver al catálogo</a>
+  @if (libro) {
+    <div class="detail-head"><span class="section-kicker">FICHA BIBLIOGRÁFICA · {{ libro.id }}</span><h1>{{ libro.titulo }}</h1><p>Información técnica y disponibilidad del ejemplar universitario.</p></div>
+    <mat-card class="detail-card">
+      <div class="book-symbol" aria-hidden="true"><span>▤</span><small>UCPS<br>LIBRARY</small></div>
+      <div class="book-info"><span class="subject">{{ libro.categoria }}</span><h2>{{ libro.titulo }}</h2><p class="sub">Registro de libro · {{ libro.id }}</p><div class="detail-grid"><div><small>IDENTIFICADOR</small><strong>{{ libro.id }}</strong></div><div><small>AUTOR</small><strong>{{ libro.autor }}</strong></div><div><small>ÁREA DE CONOCIMIENTO</small><strong>{{ libro.categoria }}</strong></div><div><small>EJEMPLARES DISPONIBLES</small><strong class="stock">● {{ libro.disponibles }} unidades</strong></div></div><a mat-raised-button color="primary" routerLink="/" class="return-btn">← Regresar al catálogo principal</a></div>
+    </mat-card>
+  } @else {
+    <mat-card class="missing-card"><h1>Libro no encontrado</h1><p>El código {{ id }} no corresponde a un registro del catálogo.</p><a mat-raised-button routerLink="/">Regresar al catálogo</a></mat-card>
+  }
+</section>

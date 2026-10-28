@@ -1,0 +1,7 @@
+.topbar {background:#101c34;color:white;border-bottom:1px solid #2a3750;}
+.topbar-inner {max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;min-height:76px;padding:12px 24px;gap:20px;}
+.brand {display:flex;gap:13px;align-items:center;color:white;text-decoration:none;}
+.brand-icon {width:43px;height:43px;display:grid;place-items:center;background:#7d89f9;color:#101c34;font-size:22px;font-weight:800;border-radius:13px;}
+.brand strong,.brand small {display:block;}.brand strong{font-size:16px;letter-spacing:-.3px}.brand small{font-size:11px;color:#b9c4dc;margin-top:2px}
+.top-right {display:flex;align-items:center;gap:11px;font-size:12px;color:#c6d0e7}.tag{border:1px solid #485873;border-radius:30px;padding:7px 12px;color:#e0e7ff}.status-dot{background:#5ce6ad;width:7px;height:7px;border-radius:50%;box-shadow:0 0 0 4px #5ce6ad22}
+.app-main {min-height:calc(100vh - 138px);}.app-footer{max-width:1180px;display:flex;justify-content:space-between;gap:12px;margin:auto;padding:24px;color:#8190aa;font-size:11px}@media(max-width:700px){.top-right .live-text,.tag{display:none}.app-footer{flex-direction:column}}

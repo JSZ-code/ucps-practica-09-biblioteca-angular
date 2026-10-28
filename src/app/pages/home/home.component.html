@@ -1,0 +1,27 @@
+<section class="container">
+  <div class="hero">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> PLATAFORMA ACADÉMICA · UCPS</span>
+      <h1>El conocimiento,<br><span>a un clic de distancia.</span></h1>
+      <p>Explora el catálogo universitario, descubre recursos académicos y consulta la disponibilidad de cada ejemplar.</p>
+      <div class="hero-pills"><span>◎ 4 áreas de conocimiento</span><span>◈ Consulta instantánea</span></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="art-circle c1"></div><div class="art-circle c2"></div><div class="art-book b1"></div><div class="art-book b2"></div><div class="art-book b3"></div><div class="art-mini">BIBLIOTECA<br><strong>UNIVERSITARIA</strong></div></div>
+  </div>
+  <div class="section-intro"><div><span class="section-kicker">PANORAMA GENERAL</span><h2>Tu biblioteca en cifras</h2></div><span class="section-meta">Información actualizada · Base estática académica</span></div>
+  <div class="metrics">
+    <div class="metric"><span class="metric-icon purple">▤</span><div><strong>{{ cantidadTotal }}</strong><small>Libros en catálogo</small></div></div>
+    <div class="metric"><span class="metric-icon teal">▦</span><div><strong>{{ categoriasTotales }}</strong><small>Áreas académicas</small></div></div>
+    <div class="metric"><span class="metric-icon gold">◉</span><div><strong>{{ unidadesTotales }}</strong><small>Ejemplares disponibles</small></div></div>
+  </div>
+  <mat-card class="catalog-card">
+    <div class="catalog-heading"><div><span class="section-kicker">EXPLORA Y DESCUBRE</span><h2>Catálogo de libros</h2><p>Filtra por área académica o busca un título, código o autor.</p></div><span class="results-pill">{{ librosFiltrados.length }} resultados</span></div>
+    <div class="filters">
+      <mat-form-field appearance="outline" subscriptSizing="dynamic" class="search-box"><mat-label>Buscar libro, autor o código</mat-label><input matInput [(ngModel)]="terminoBusqueda" (ngModelChange)="aplicarFiltros()" placeholder="Ej. Angular, LIB-017, Martin" aria-label="Buscar por libro, autor o código"></mat-form-field>
+      <mat-form-field appearance="outline" subscriptSizing="dynamic" class="category-box"><mat-label>Área de conocimiento</mat-label><mat-select [(value)]="categoriaSeleccionada" (selectionChange)="aplicarFiltros()" aria-label="Filtrar por categoría">@for (categoria of categorias; track categoria) { <mat-option [value]="categoria">{{ categoria === 'Todas' ? 'Todas las categorías' : categoria }}</mat-option> }</mat-select></mat-form-field>
+      <button type="button" class="clear-btn" (click)="limpiarFiltros()">Limpiar filtros</button>
+    </div>
+    <app-tabla-libros [libros]="librosFiltrados"></app-tabla-libros>
+    <div class="catalog-footer"><span>Mostrando {{ librosFiltrados.length }} de {{ cantidadTotal }} libros registrados</span><span>Fuente: catálogo proporcionado por el docente</span></div>
+  </mat-card>
+</section>

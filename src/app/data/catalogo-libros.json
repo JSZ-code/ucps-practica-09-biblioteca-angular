@@ -1,0 +1,212 @@
+[
+  {
+    "id": "LIB-001",
+    "titulo": "Clean Code",
+    "categoria": "Programación",
+    "autor": "Robert C. Martin",
+    "disponibles": 12
+  },
+  {
+    "id": "LIB-002",
+    "titulo": "Design Patterns",
+    "categoria": "Programación",
+    "autor": "GoF",
+    "disponibles": 5
+  },
+  {
+    "id": "LIB-003",
+    "titulo": "Refactoring",
+    "categoria": "Programación",
+    "autor": "Martin Fowler",
+    "disponibles": 8
+  },
+  {
+    "id": "LIB-004",
+    "titulo": "Head First Java",
+    "categoria": "Programación",
+    "autor": "Kathy Sierra",
+    "disponibles": 15
+  },
+  {
+    "id": "LIB-005",
+    "titulo": "Effective Java",
+    "categoria": "Programación",
+    "autor": "Joshua Bloch",
+    "disponibles": 4
+  },
+  {
+    "id": "LIB-006",
+    "titulo": "Python Crash Course",
+    "categoria": "Programación",
+    "autor": "Eric Matthes",
+    "disponibles": 20
+  },
+  {
+    "id": "LIB-007",
+    "titulo": "Eloquent JavaScript",
+    "categoria": "Programación",
+    "autor": "Marijn Haverbeke",
+    "disponibles": 10
+  },
+  {
+    "id": "LIB-008",
+    "titulo": "Angular Up and Running",
+    "categoria": "Programación",
+    "autor": "Shyam Seshadri",
+    "disponibles": 6
+  },
+  {
+    "id": "LIB-009",
+    "titulo": "Pragmatic Programmer",
+    "categoria": "Programación",
+    "autor": "Andrew Hunt",
+    "disponibles": 9
+  },
+  {
+    "id": "LIB-010",
+    "titulo": "Database System Concepts",
+    "categoria": "Bases de Datos",
+    "autor": "Silberschatz",
+    "disponibles": 14
+  },
+  {
+    "id": "LIB-011",
+    "titulo": "SQL For Dummies",
+    "categoria": "Bases de Datos",
+    "autor": "Allen G. Taylor",
+    "disponibles": 22
+  },
+  {
+    "id": "LIB-012",
+    "titulo": "Seven Databases in Seven Weeks",
+    "categoria": "Bases de Datos",
+    "autor": "Luc Perkins",
+    "disponibles": 7
+  },
+  {
+    "id": "LIB-013",
+    "titulo": "High Performance MySQL",
+    "categoria": "Bases de Datos",
+    "autor": "Baron Schwartz",
+    "disponibles": 3
+  },
+  {
+    "id": "LIB-014",
+    "titulo": "MongoDB: The Definitive Guide",
+    "categoria": "Bases de Datos",
+    "autor": "Shannon Bradshaw",
+    "disponibles": 11
+  },
+  {
+    "id": "LIB-015",
+    "titulo": "Oracle PL/SQL Programming",
+    "categoria": "Bases de Datos",
+    "autor": "Steven Feuerstein",
+    "disponibles": 5
+  },
+  {
+    "id": "LIB-016",
+    "titulo": "Data Warehouse Toolkit",
+    "categoria": "Bases de Datos",
+    "autor": "Ralph Kimball",
+    "disponibles": 8
+  },
+  {
+    "id": "LIB-017",
+    "titulo": "Computer Networking",
+    "categoria": "Redes",
+    "autor": "Kurose & Ross",
+    "disponibles": 18
+  },
+  {
+    "id": "LIB-018",
+    "titulo": "TCP/IP Illustrated",
+    "categoria": "Redes",
+    "autor": "W. Richard Stevens",
+    "disponibles": 4
+  },
+  {
+    "id": "LIB-019",
+    "titulo": "Modern Operating Systems",
+    "categoria": "Redes",
+    "autor": "Andrew S. Tanenbaum",
+    "disponibles": 13
+  },
+  {
+    "id": "LIB-020",
+    "titulo": "Linux Command Line",
+    "categoria": "Redes",
+    "autor": "William Shotts",
+    "disponibles": 25
+  },
+  {
+    "id": "LIB-021",
+    "titulo": "Network Warrior",
+    "categoria": "Redes",
+    "autor": "Gary A. Donahue",
+    "disponibles": 6
+  },
+  {
+    "id": "LIB-022",
+    "titulo": "Hacking: The Art of Exploitation",
+    "categoria": "Redes",
+    "autor": "Jon Erickson",
+    "disponibles": 2
+  },
+  {
+    "id": "LIB-023",
+    "titulo": "Introduction to Algorithms",
+    "categoria": "Ciencias Básicas",
+    "autor": "Thomas H. Cormen",
+    "disponibles": 10
+  },
+  {
+    "id": "LIB-024",
+    "titulo": "Discrete Mathematics",
+    "categoria": "Ciencias Básicas",
+    "autor": "Kenneth Rosen",
+    "disponibles": 16
+  },
+  {
+    "id": "LIB-025",
+    "titulo": "Calculus: Early Transcendentals",
+    "categoria": "Ciencias Básicas",
+    "autor": "James Stewart",
+    "disponibles": 30
+  },
+  {
+    "id": "LIB-026",
+    "titulo": "Linear Algebra and Its Applications",
+    "categoria": "Ciencias Básicas",
+    "autor": "Gilbert Strang",
+    "disponibles": 12
+  },
+  {
+    "id": "LIB-027",
+    "titulo": "Artificial Intelligence",
+    "categoria": "Ciencias Básicas",
+    "autor": "Stuart Russell",
+    "disponibles": 9
+  },
+  {
+    "id": "LIB-028",
+    "titulo": "Grokking Algorithms",
+    "categoria": "Ciencias Básicas",
+    "autor": "Aditya Bhargava",
+    "disponibles": 21
+  },
+  {
+    "id": "LIB-029",
+    "titulo": "Physics for Scientists",
+    "categoria": "Ciencias Básicas",
+    "autor": "Raymond A. Serway",
+    "disponibles": 15
+  },
+  {
+    "id": "LIB-030",
+    "titulo": "Theory of Computation",
+    "categoria": "Ciencias Básicas",
+    "autor": "Michael Sipser",
+    "disponibles": 7
+  }
+]

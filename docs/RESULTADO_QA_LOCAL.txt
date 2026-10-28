@@ -1,0 +1,92 @@
+REPORTE DE PRUEBAS DE CATÁLOGO / ESTRUCTURA
+Fecha generación artefacto: 2026-10-27 (hora Perú)
+NO es resultado del build Angular ni del navegador.
+
+TAP version 13
+# Subtest: CT-01: catálogo contiene exactamente 30 registros
+ok 1 - CT-01: catálogo contiene exactamente 30 registros
+  ---
+  duration_ms: 1.666501
+  type: 'test'
+  ...
+# Subtest: CT-02: los 30 códigos son únicos
+ok 2 - CT-02: los 30 códigos son únicos
+  ---
+  duration_ms: 0.173351
+  type: 'test'
+  ...
+# Subtest: CT-03: IDs consecutivos LIB-001 a LIB-030
+ok 3 - CT-03: IDs consecutivos LIB-001 a LIB-030
+  ---
+  duration_ms: 0.114763
+  type: 'test'
+  ...
+# Subtest: CT-04: categorías y cantidades coinciden con el documento oficial
+ok 4 - CT-04: categorías y cantidades coinciden con el documento oficial
+  ---
+  duration_ms: 0.243607
+  type: 'test'
+  ...
+# Subtest: CT-05: todos los registros tienen datos completos y unidades válidas
+ok 5 - CT-05: todos los registros tienen datos completos y unidades válidas
+  ---
+  duration_ms: 0.229175
+  type: 'test'
+  ...
+# Subtest: CT-06: búsqueda por ID localiza LIB-017
+ok 6 - CT-06: búsqueda por ID localiza LIB-017
+  ---
+  duration_ms: 0.785183
+  type: 'test'
+  ...
+# Subtest: CT-07: un ID inexistente no produce registros
+ok 7 - CT-07: un ID inexistente no produce registros
+  ---
+  duration_ms: 0.155103
+  type: 'test'
+  ...
+# Subtest: CT-08: filtro Redes devuelve 6 libros
+ok 8 - CT-08: filtro Redes devuelve 6 libros
+  ---
+  duration_ms: 0.09325
+  type: 'test'
+  ...
+# Subtest: CT-09: el servicio expone los 3 métodos solicitados
+ok 9 - CT-09: el servicio expone los 3 métodos solicitados
+  ---
+  duration_ms: 0.498111
+  type: 'test'
+  ...
+# Subtest: CT-10: tabla Angular Material y routerLink están definidos
+ok 10 - CT-10: tabla Angular Material y routerLink están definidos
+  ---
+  duration_ms: 0.301003
+  type: 'test'
+  ...
+# Subtest: CT-11: home usa formulario Material y alimenta al hijo
+ok 11 - CT-11: home usa formulario Material y alimenta al hijo
+  ---
+  duration_ms: 0.144458
+  type: 'test'
+  ...
+# Subtest: CT-12: detalle obtiene ID con ActivatedRoute
+ok 12 - CT-12: detalle obtiene ID con ActivatedRoute
+  ---
+  duration_ms: 0.078298
+  type: 'test'
+  ...
+# Subtest: CT-13: configuración incluye ruta /libro/:id
+ok 13 - CT-13: configuración incluye ruta /libro/:id
+  ---
+  duration_ms: 0.062545
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 104.421758
