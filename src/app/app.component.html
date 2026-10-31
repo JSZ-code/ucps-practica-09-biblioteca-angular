@@ -1,11 +1,16 @@
-<header class="topbar">
+<mat-toolbar color="primary" class="topbar">
   <div class="topbar-inner">
     <a routerLink="/" class="brand" aria-label="Ir al catálogo">
       <span class="brand-icon" aria-hidden="true">B.</span>
-      <span><strong>UCPS Biblioteca</strong><small>Catálogo académico digital</small></span>
+      <span><strong>UCPS Biblioteca</strong><small>Catálogo académico y reportabilidad</small></span>
     </a>
-    <div class="top-right"><span class="tag">UNSA · Práctica 09</span><span class="status-dot" aria-hidden="true"></span> <span class="live-text">Catálogo disponible</span></div>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <button mat-button routerLink="/" routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }">Catálogo</button>
+      <button mat-button routerLink="/dashboard" routerLinkActive="active-link">Dashboard</button>
+    </nav>
+    <div class="top-right"><span class="tag">UNSA · Práctica 10</span></div>
   </div>
-</header>
+</mat-toolbar>
 <main class="app-main"><router-outlet></router-outlet></main>
 <footer class="app-footer"><span>Universidad Nacional de San Agustín · UCPS</span><span>Desarrollo de Aplicaciones Empresariales · 2026</span></footer>

@@ -1,20 +1,23 @@
-name: Angular CI
+name: Angular P09 + P10 CI
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 jobs:
-  build:
+  build-and-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
       - name: Install dependencies
-        run: npm install
-      - name: Verify catalog
+        run: npm ci
+      - name: Verify catalog (P09)
         run: npm run test:catalogo
+      - name: Verify dashboard calculations and structure (P10)
+        run: npm run test:dashboard
       - name: Build production
         run: npm run build

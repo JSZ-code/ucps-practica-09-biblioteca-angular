@@ -1,0 +1,46 @@
+<section class="dashboard-page">
+  <div class="eyebrow">PLATAFORMA ACADÉMICA · UCPS</div>
+  <div class="heading">
+    <div>
+      <h1>Dashboard de biblioteca</h1>
+      <p>Indicadores calculados desde los 30 libros del catálogo mediante transformaciones de arreglos en TypeScript.</p>
+    </div>
+    <span class="source-pill">Fuente: LibroService</span>
+  </div>
+
+  <section class="metrics" aria-label="Indicadores principales">
+    <mat-card class="metric"><mat-card-content><span>Libros registrados</span><strong>{{ salud.total }}</strong><small>Catálogo original</small></mat-card-content></mat-card>
+    <mat-card class="metric"><mat-card-content><span>Ejemplares disponibles</span><strong>{{ totalUnidades }}</strong><small>Sumatoria de existencias</small></mat-card-content></mat-card>
+    <mat-card class="metric"><mat-card-content><span>Categorías</span><strong>{{ categorias }}</strong><small>Áreas de conocimiento</small></mat-card-content></mat-card>
+    <mat-card class="metric critical"><mat-card-content><span>Libros con stock crítico</span><strong>{{ salud.criticos }}</strong><small>Menos de 10 unidades · {{ porcentajeCritico.toFixed(1) }}%</small></mat-card-content></mat-card>
+  </section>
+
+  <section class="chart-grid" aria-label="Gráficos del inventario">
+    <mat-card class="chart-card">
+      <mat-card-header>
+        <mat-card-title>Inventario por categoría</mat-card-title>
+        <mat-card-subtitle>Gráfico de barras · Suma de unidades disponibles</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="chart-canvas"><canvas #canvasBarras aria-label="Gráfico de barras con inventario por categoría" role="img"></canvas></div>
+        <p class="help">Programación, Bases de Datos, Redes y Ciencias Básicas.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="chart-card">
+      <mat-card-header>
+        <mat-card-title>Estado de salud del catálogo</mat-card-title>
+        <mat-card-subtitle>Gráfico de dona · Cantidad de títulos según umbral</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="chart-canvas donut-canvas"><canvas #canvasDona aria-label="Gráfico de dona con libros críticos y saludables" role="img"></canvas></div>
+        <div class="stock-legend">
+          <span><b class="danger">{{ salud.criticos }}</b> críticos</span>
+          <span><b class="healthy">{{ salud.saludables }}</b> saludables</span>
+        </div>
+        <p class="help">Se evalúa el número de títulos, no la cantidad de ejemplares.</p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+  <p class="footnote">Criterio del docente: stock crítico &lt; 10 unidades; stock saludable &ge; 10 unidades por libro.</p>
+</section>

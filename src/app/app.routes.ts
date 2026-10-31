@@ -4,6 +4,7 @@ import { DetalleLibroComponent } from './pages/detalle-libro/detalle-libro.compo
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Catálogo | UCPS Biblioteca' },
+  { path: 'dashboard', loadComponent: () => import('./pages/dashboard/dashboard.component').then(m => m.DashboardComponent), title: 'Dashboard | UCPS Biblioteca' },
   { path: 'libro/:id', component: DetalleLibroComponent, title: 'Ficha de libro | UCPS Biblioteca' },
   { path: '**', redirectTo: '' }
 ];
